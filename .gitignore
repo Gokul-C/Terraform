@@ -1,0 +1,11 @@
+#it contains providers information
+
+.terraform
+
+#its the variables file
+
+*.tfvars
+
+#file that contains all the details about the infrastructure
+
+*.tfstate*
