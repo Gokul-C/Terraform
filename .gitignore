@@ -4,7 +4,7 @@
 
 #its the variables file
 
-*.tfvars
+#*.tfvars
 
 #file that contains all the details about the infrastructure
 

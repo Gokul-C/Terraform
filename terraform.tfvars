@@ -1,0 +1,7 @@
+vpc-cidr_block = "10.0.0.0/16"
+subnet1-cidr_block = "10.0.10.0/24"
+avail_zone = "ap-south-1a"
+env_prefix  = "dev"
+my_ip = "103.110.170.84/32"
+instance_type = "t2.micro"
+public_key_location = "/home/gokulc/.ssh/id_rsa.pub"
