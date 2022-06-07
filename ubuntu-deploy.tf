@@ -125,12 +125,12 @@ resource "aws_default_security_group" "default-sg" {
 
 // selecting EC2 instance   ---6
 
-data "aws_ami" "latest-ubuntu-linux-image" {
+data "aws_ami" "latest-ubuntu-linux-image" {    #aws_ami should be same because its a provider name 
   most_recent = true
-  owners = ["099720109477"]  
+  owners = ["099720109477"]                    # owner name/id
   filter {
     name = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20220419"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20220419"]  #AMI Name
 
   }
   filter {
@@ -160,9 +160,9 @@ resource "aws_key_pair" "ssh-key" {
 
 // configuring ec2 instace for deployment -----7
 
-resource "aws_instance" "myapp-server" {
+resource "aws_instance" "myapp-server" {    
   
-  ami = "ami-05ba3a39a75be1ec4"
+  ami = "ami-05ba3a39a75be1ec4"    # AMI Id
   instance_type = var.instance_type
 
   subnet_id = aws_subnet.myapp-subnet-1.id
