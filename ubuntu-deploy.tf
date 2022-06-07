@@ -86,7 +86,7 @@ resource "aws_default_route_table" "main-rtb" {
 
 
 
-//Using default security group ---- configuring incoming & outgoing ports  -------- -5
+#Using default security group ---- configuring incoming & outgoing ports  -------- -5
 
 resource "aws_default_security_group" "default-sg" {
   
